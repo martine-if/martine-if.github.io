@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;600;800&display=swap");
+
+:root {
+  --font-family: "Noto Sans Mono";
+  --normal-font: 400;
+  --bold-font: 600;
+  --bolder-font: 800;
+  --bg-color: #fdf9f3;
+  --primary-color: #2c292d;
+  --color-1: #ffd867;
+  --color-2: #ff6188;
+  --color-3: #fc9867;
+  --color-4: #aadc76;
+  --color-5: #78dce8;
+  --color-6: #ab9df2;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 5rem;
+  --line-height: 5rem;
+  --transition-1: 0s;
+  --transition-2: 3s;
+}
+/* Variables end */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+strong {
+  position: relative;
+}
+
+strong::before {
+  /* Highlight color */
+  background-color: var(--color-1);
+
+  content: "";
+  position: absolute;
+  width: calc(100% + 6px);
+  height: 60%;
+  left: -5px;
+  bottom: 0;
+  z-index: -1;
+  transform: rotate(-3deg);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a1,
+a2,
+a3,
+a4 {
+  text-decoration: none;
+  font-size: 1.25em;
+  color: var(--primary-color);
+}
+
+a1:hover {
+  color: var(--color-2);
+}
+
+a2:hover {
+  color: var(--color-3);
+}
+
+a3:hover {
+  color: var(--color-4);
+}
+
+a4:hover {
+  color: var(--color-5);
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  background-color: var(--bg-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+nav h1 l1,
+l2,
+l3,
+l4,
+l5,
+l6 {
+  color: var(--primary-color);
+  font-size: 2.25rem;
+  transition: var(--transition-2);
+}
+nav h1 l1:hover {
+  color: var(--color-2);
+  transition: var(--transition-1);
+}
+nav h1 l2:hover {
+  color: var(--color-3);
+  transition: var(--transition-1);
+}
+nav h1 l3:hover {
+  color: var(--color-1);
+  transition: var(--transition-1);
+}
+nav h1 l4:hover {
+  color: var(--color-4);
+  transition: var(--transition-1);
+}
+nav h1 l5:hover {
+  color: var(--color-5);
+  transition: var(--transition-1);
+}
+nav h1 l6:hover {
+  color: var(--color-6);
+  transition: var(--transition-1);
+}
+
+.no-transition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+nav a1,
+a2,
+a3,
+a4,
+a5 {
+  color: var(--primary-color);
+  transition: var(--transition-1);
+  font-size: 1.25rem;
+}
+
+nav a1:hover {
+  color: var(--color-2);
+  border-bottom: 2px solid var(--color-2);
+}
+nav a2:hover {
+  color: var(--color-3);
+  border-bottom: 2px solid var(--color-3);
+}
+nav a3:hover {
+  color: var(--color-4);
+  border-bottom: 2px solid var(--color-4);
+}
+nav a4:hover {
+  color: var(--color-5);
+  border-bottom: 2px solid var(--color-5);
+}
+nav a5:hover {
+  color: var(--color-6);
+  border-bottom: 2px solid var(--color-6);
+}
+
+nav ul {
+  display: flex;
+  gap: 3rem;
+}
+
+nav ul li {
+  font-weight: var(--bold-font);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14rem;
+  max-width: 68.75rem;
+  margin: 5rem 10rem;
+  color: var(--primary-color);
+}
+
+.logo img {
+  height: 35rem;
+  width: 35rem;
+}
+
+.logo h2 {
+  font-size: 1.75rem;
+}
+
+.logo p {
+  margin: 1rem 0rem;
+  font-size: 1.1rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 3em;
+  height: 1.5em;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--primary-color);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1em;
+  width: 1em;
+  left: 0.25em;
+  bottom: 0.25em;
+  background-color: var(--bg-color);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: var(--primary-color);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(1.5em);
+  -ms-transform: translateX(1.5em);
+  transform: translateX(1.5em);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
