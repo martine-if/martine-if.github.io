@@ -258,3 +258,36 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+.contact {
+  margin-top: 2rem;
+  color: var(--primary-color);
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-form-container {
+  max-width: 45rem;
+  margin: 0 auto;
+  padding: 1rem;
+  margin-bottom: 5rem;
+}
+
+.contact-form-container textarea {
+  min-height: 5rem;
+  font-size: 1em;
+}
+
+.contact-form-container label {
+  line-height: 2rem;
+}
+
+.contact-form-container .input-field {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid var(--primary-color);
+  font-size: 1em;
+}
