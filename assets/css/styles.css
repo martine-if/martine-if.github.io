@@ -181,6 +181,15 @@ nav ul li {
   font-weight: var(--bold-font);
 }
 
+.burger-menu {
+  color: var(--primary-color);
+  font-size: 2rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -291,4 +300,54 @@ input:checked + .slider:before {
   padding: 0.5rem;
   border: 2px solid var(--primary-color);
   font-size: 1em;
+}
+
+@media screen and (max-width: 720px) {
+  nav {
+    padding: 1.5rem 1rem;
+  }
+
+  nav ul {
+    position: fixed;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    top: 86px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+  }
+
+  nav ul li {
+    margin: 8px;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  nav ul.show {
+    transform: translateX(0);
+  }
+
+  .logo {
+    margin-top: 2rem;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .logo img {
+    height: 24rem;
+    width: 18rem;
+  }
+
+  .bio {
+    margin-top: 3rem;
+    width: 20.5rem;
+  }
+
+  .contact-form-container {
+    max-width: 23.75rem;
+  }
 }
