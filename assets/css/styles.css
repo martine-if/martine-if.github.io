@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;600;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
 
 :root {
   --font-family: "Noto Sans Mono";
@@ -8,7 +9,9 @@
   --bold-font: 600;
   --bolder-font: 800;
   --bg-color: #ffffff;
+  --bg-color-trans: rgba(255, 255, 255, 0.5);
   --primary-color: #2c292d;
+  --primary-color-trans: rgba(44, 41, 45, 0.5);
   --color-1: #ffd867;
   --color-2: #ff6188;
   --color-3: #fc9867;
@@ -25,6 +28,16 @@
 
 html {
   scroll-behavior: smooth;
+  cursor: none;
+}
+
+#cursor {
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background-color: var(--primary-color-trans);
+  position: absolute;
+  z-index: 2000;
 }
 
 /* CSS Resets */
@@ -95,8 +108,8 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 2rem 4rem;
-  background-color: var(--bg-color);
-  border-bottom: 2px solid var(--primary-color);
+  background-color: var(--bg-color-trans);
+  /*border-bottom: 2px solid var(--primary-color);*/
 }
 
 nav h1 l1,
@@ -186,8 +199,8 @@ nav ul li {
   font-size: 2rem;
   border: 0;
   background-color: transparent;
-  cursor: pointer;
   display: none;
+  cursor: none;
 }
 
 .logo {
@@ -219,6 +232,7 @@ nav ul li {
   display: inline-block;
   width: 3em;
   height: 1.5em;
+  cursor: none;
 }
 
 .switch input {
@@ -229,7 +243,6 @@ nav ul li {
 
 .slider {
   position: absolute;
-  cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
@@ -284,15 +297,18 @@ input:checked + .slider:before {
   margin: 0 auto;
   padding: 1rem;
   margin-bottom: 5rem;
+  cursor: none;
 }
 
 .contact-form-container textarea {
   min-height: 5rem;
   font-size: 1em;
+  cursor: none;
 }
 
 .contact-form-container label {
   line-height: 2rem;
+  cursor: none;
 }
 
 .contact-form-container .input-field {
@@ -300,6 +316,8 @@ input:checked + .slider:before {
   padding: 0.5rem;
   border: 2px solid var(--primary-color);
   font-size: 1em;
+  cursor: none;
+  font-family: var(--font-family);
 }
 
 @media screen and (max-width: 720px) {
@@ -347,7 +365,16 @@ input:checked + .slider:before {
     width: 20.5rem;
   }
 
-  .contact-form-container {
-    max-width: 23.75rem;
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--bg-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: var(--bold-font);
+    transition: var(--transition);
+    cursor: none;
   }
 }

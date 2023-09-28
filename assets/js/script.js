@@ -25,11 +25,15 @@ function toggle() {
 
 function dark() {
   r.style.setProperty("--bg-color", "#2c292d");
+  r.style.setProperty("--bg-color-trans", "rgba(44, 41, 45, 0.5)");
+  r.style.setProperty("--primary-color-trans", "rgba(255, 255, 255, 0.5)");
   r.style.setProperty("--primary-color", "#ffffff");
 }
 
 function light() {
   r.style.setProperty("--bg-color", "#ffffff");
+  r.style.setProperty("--bg-color-trans", "rgba(255, 255, 255, 0.5)");
+  r.style.setProperty("--primary-color-trans", "rgba(44, 41, 45, 0.5)");
   r.style.setProperty("--primary-color", "#2c292d");
 }
 
@@ -44,3 +48,12 @@ navLink.forEach((link) =>
     ul.classList.remove("show");
   })
 );
+
+$(document).ready(function () {
+  $(document).on("mousemove", function (e) {
+    $("#cursor").css({
+      left: e.pageX,
+      top: e.pageY,
+    });
+  });
+});
