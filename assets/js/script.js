@@ -24,17 +24,17 @@ function toggle() {
 }
 
 function dark() {
-  r.style.setProperty("--bg-color", "#2c292d");
-  r.style.setProperty("--bg-color-trans", "rgba(44, 41, 45, 0.5)");
-  r.style.setProperty("--primary-color-trans", "rgba(255, 255, 255, 0.5)");
-  r.style.setProperty("--primary-color", "#ffffff");
+  r.style.setProperty("--bg-color", "#262627");
+  r.style.setProperty("--bg-color-trans", "#26262782");
+  r.style.setProperty("--primary-color-trans", "#eaeaea80");
+  r.style.setProperty("--primary-color", "#eaeaea");
 }
 
 function light() {
-  r.style.setProperty("--bg-color", "#ffffff");
-  r.style.setProperty("--bg-color-trans", "rgba(255, 255, 255, 0.5)");
-  r.style.setProperty("--primary-color-trans", "rgba(44, 41, 45, 0.5)");
-  r.style.setProperty("--primary-color", "#2c292d");
+  r.style.setProperty("--bg-color", "#eaeaea");
+  r.style.setProperty("--bg-color-trans", "#eaeaea80");
+  r.style.setProperty("--primary-color-trans", "#26262782");
+  r.style.setProperty("--primary-color", "#262627");
 }
 
 burger.addEventListener("click", () => {

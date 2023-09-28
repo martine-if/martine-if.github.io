@@ -8,10 +8,10 @@
   --normal-font: 400;
   --bold-font: 600;
   --bolder-font: 800;
-  --bg-color: #ffffff;
-  --bg-color-trans: rgba(255, 255, 255, 0.5);
-  --primary-color: #2c292d;
-  --primary-color-trans: rgba(44, 41, 45, 0.5);
+  --bg-color: #eaeaea;
+  --bg-color-trans: #eaeaea80;
+  --primary-color: #262627;
+  --primary-color-trans: #26262782;
   --color-1: #ffd867;
   --color-2: #ff6188;
   --color-3: #fc9867;
@@ -315,9 +315,11 @@ input:checked + .slider:before {
   width: 100%;
   padding: 0.5rem;
   border: 2px solid var(--primary-color);
+  background-color: var(--bg-color);
   font-size: 1em;
   cursor: none;
   font-family: var(--font-family);
+  color: var(--primary-color);
 }
 
 @media screen and (max-width: 720px) {
