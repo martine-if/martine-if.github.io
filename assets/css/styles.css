@@ -257,15 +257,6 @@ nav ul li {
   margin-bottom: 2rem;
 }
 
-.writing1 span:hover {
-  color: var(--color-2);
-  border: 2px solid var(--color-2);
-}
-.writing2 span:hover {
-  color: var(--color-3);
-  border: 2px solid var(--color-3);
-}
-
 .sections span::after {
   float: right;
   right: 10%;
@@ -287,6 +278,10 @@ nav ul li {
   list-style-type: disc;
   font-weight: var(--normal-font);
   margin-left: 3rem;
+}
+
+.slide a {
+  color: var(--primary-color);
 }
 
 #touch {
