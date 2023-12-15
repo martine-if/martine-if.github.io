@@ -8,10 +8,10 @@
   --normal-font: 400;
   --bold-font: 600;
   --bolder-font: 800;
-  --bg-color: #eaeaea;
-  --bg-color-trans: #eaeaea80;
-  --primary-color: #262627;
-  --primary-color-trans: #26262782;
+  --bg-color: #f6f6f6;
+  --bg-color-trans: #f6f6f680;
+  --primary-color: #25242b;
+  --primary-color-trans: #25242b80;
   --color-1: #ffd867;
   --color-2: #ff6188;
   --color-3: #fc9867;
@@ -28,10 +28,10 @@
 
 html {
   scroll-behavior: smooth;
-  cursor: none;
+  cursor: auto;
 }
 
-#cursor {
+/*#cursor {
   height: 20px;
   width: 20px;
   border-radius: 20px;
@@ -39,7 +39,7 @@ html {
   position: absolute;
   z-index: 2000;
 }
-
+*/
 /* CSS Resets */
 * {
   margin: 0;
