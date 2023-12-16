@@ -38,7 +38,6 @@
   </head>
 
   <body>
-    <div id="circularcursor"></div>
     <!-- Navbar -->
     <nav>
       <h1>
@@ -51,8 +50,10 @@
       </h1>
       <ul class="navigation">
         <li><a href="#about" class="nav-link one">about</a></li>
-        <li><a href="#writing" class="nav-link two">writing</a></li>
-        <li><a href="#projects" class="nav-link three">projects</a></li>
+        <li><a href="#translations" class="nav-link two">translation</a></li>
+        <li>
+          <a href="#technical" class="nav-link three">technical writing</a>
+        </li>
         <li>
           <a href="assets/resume.pdf" class="four">resume</a>
         </li>
@@ -70,7 +71,8 @@
       </div>
     </nav>
     <!-- Hero Section -->
-    <section class="logo" id="about">
+    <div id="about"></div>
+    <section class="logo">
       <img src="assets/images/logo_m.png" loading="lazy" class="logo-img" />
       <div class="bio">
         <h2 class="bio-title">hello, world!</h2>
@@ -82,34 +84,31 @@
       </div>
     </section>
 
+    <div class="buffer" id="translations"></div>
     <section class="writing" id="writing">
-      <h2>writing</h2>
-      <div class="sections">
-        <div class="writing1">
-          <label for="touch"><span>translation</span></label>
-          <input type="checkbox" id="touch" />
-
-          <ul class="slide">
-            <li><a>Todesfuge - Paul Celan</a></li>
-            <li>
-              <a>Der Turm von Babel</a>
-            </li>
-            <li>
-              <a>Shanghai fern von wo - Ursula Krechel</a>
-            </li>
-            <li><a>Inventur - Guenter Eich</a></li>
-          </ul>
-        </div>
-
-        <div class="writing2">
-          <label for="touch2"><span>technical writing</span></label>
-          <input type="checkbox" id="touch2" />
-
-          <ul class="slide">
-            <li>To be added... stay tuned!</li>
-          </ul>
-        </div>
-      </div>
+      <h2>translation</h2>
+      <article class="translations">
+        <h3>Die Känguru-Chroniken</h3>
+        <div class="author">&gt; by Marc-Uwe Kling</div>
+        <h3>Shanghai fern von wo</h3>
+        <div class="author">&gt; by Ursula Krechel</div>
+        <h3>Die Verwandlung</h3>
+        <div class="author">&gt; by Franz Kafka</div>
+        <h3>Todesfuge</h3>
+        <div class="author">&gt; by Paul Celan</div>
+        <h3>Anna Blume</h3>
+        <div class="author">&gt; by Kurt Schwitters</div>
+        <h3>Inventur</h3>
+        <div class="author">&gt; by Günter Eich</div>
+      </article>
+      <div class="buffer1" id="technical"></div>
+      <h2>technical writing</h2>
+      <article class="technical">
+        <h3>Latte Art for Beginners</h3>
+        <div class="author">&gt; a guide by me!</div>
+        <h3>Accessing the NYU CIMS Server on a Windows Computer</h3>
+        <div class="author">&gt; step-by-step</div>
+      </article>
     </section>
 
     <section class="contact" id="contact">

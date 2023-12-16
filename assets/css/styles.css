@@ -229,79 +229,55 @@ nav ul li {
   font-size: 1.1rem;
 }
 
+.buffer {
+  height: 4rem;
+}
+
+.buffer1 {
+  height: 10rem;
+}
+
 .writing {
   background-color: var(--bg-color);
-  padding: 8rem 10rem;
+  padding: 6rem 10rem;
   color: var(--primary-color);
+  margin-bottom: 10rem;
 }
 
 .writing h2 {
-  margin-bottom: 4rem;
-  text-align: center;
-  font-size: 2rem;
-}
-
-.sections {
-  width: 100%;
+  width: 60%;
   background: var(--bg-color);
   font-weight: var(--bold-font);
-}
-
-.sections span {
-  padding: 1rem;
   background: var(--bg-color);
   color: var(--primary-color);
-  font-size: 1.5em;
-  border: 2px solid var(--primary-color);
-  display: block;
-  margin-bottom: 2rem;
-}
-
-.sections span::after {
-  float: right;
-  right: 10%;
-  content: "+";
-}
-
-.slide {
-  clear: both;
-  width: 100%;
-  height: 0px;
-  overflow: hidden;
+  font-size: 3rem;
+  float: left;
+  margin-bottom: 30rem;
   text-align: left;
-  transition: height 0.4s ease;
 }
 
-.slide li {
-  font-size: 1.2rem;
+.translations {
   padding: 1rem;
-  list-style-type: disc;
-  font-weight: var(--normal-font);
-  margin-left: 3rem;
+  display: block;
+  margin-bottom: 5rem;
 }
 
-.slide a {
-  color: var(--primary-color);
+.writing h3 {
+  font-weight: var(--bold-font);
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
 }
 
-#touch {
-  position: absolute;
-  opacity: 0;
-  height: 0px;
+.technical {
+  padding: 1rem;
+  display: block;
+  margin-bottom: 5rem;
 }
 
-#touch:checked + .slide {
-  height: 20rem;
-}
-
-#touch2 {
-  position: absolute;
-  opacity: 0;
-  height: 0px;
-}
-
-#touch2:checked + .slide {
-  height: 20rem;
+.writing .author {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .switch {
@@ -360,7 +336,7 @@ input:checked + .slider:before {
 }
 
 .contact {
-  margin-top: 2rem;
+  margin-top: 5rem;
   color: var(--primary-color);
 }
 
